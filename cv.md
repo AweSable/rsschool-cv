@@ -59,3 +59,11 @@ sketchesdir=r'R:\Специальные документы\Карты эскиз
 myfile = open(r'D:\Резка\БД\referencesSketches.txt', 'wb')
 saveSubdir(sketchesdir, myfile)
 myfile.close()</code></pre>
+**Work experience**
+
+**Education**
+Higher
+2009	**Samara university, Samara**
+	Faculty of Aircraft Engines, Internal combustion engines
+**Knowledge of languages**
+English — A1 — Beginner
