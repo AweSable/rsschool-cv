@@ -8,30 +8,38 @@
 	<link type="text/CSS" rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div class="header">
+	<header>
 			<img src="Images/Photo.jpeg" alt="" height="189" width="126">
 			<div class="person" style="margin: -8px 0px 0px 5px;"> 
 				<h1 style="font-size: 45px;">Denis Poryvaev</h1> 
 				<p style="margin: 3px 0px;">Man, 34 years old, date of birth 4 May 1987</p>
-				<ul style="list-style: none; padding: 10px 0px;">
-					<li>+7 (981) 1281075</li>
-					<li style="text-decoration: underline;">DA.Poryvaev@gmail.com</li>
-				</ul>
-				<p>Living: Tikhvin</p>
+				<address>
+					<ul style="list-style: none; padding: 10px 0px;">
+						<li>+7 (981) 1281075</li>
+						<li style="text-decoration: underline;">DA.Poryvaev@gmail.com</li>
+					</ul>
+					<p>Living: Tikhvin</p>
+				</address>
 			</div>
-	</div>
-	<h2>About Me</h2>
-	<p>The main goal is to overcome the barrier that prevents me from fully mastering programming, being able to transform an idea into a software product. My priority is self-improvement and mutual assistance when working in a team. My strong point is the desire to find a solution to any problem and diligence.</p>
-	<h2>Skills</h2>
-	<p>At the moment I know the syntax and can do a little programming in:</p>
-		<ul>
-			<li>VBA</li>
-			<li>Python</li>
-			<li>C ++</li>
-		</ul>
-	<h2>Code examples</h2>
-	<p>Below is an example of Python code that saves links to drawings in a text file for subsequent import into an MS Access database.</p>
-	<pre><code>
+	</header>
+	<main>
+		<section>
+			<h2>About Me</h2>
+			<p>The main goal is to overcome the barrier that prevents me from fully mastering programming, being able to transform an idea into a software product. My priority is self-improvement and mutual assistance when working in a team. My strong point is the desire to find a solution to any problem and diligence.</p>
+		</section>
+		<section>
+			<h2>Skills</h2>
+			<p>At the moment I know the syntax and can do a little programming in:</p>
+				<ul>
+					<li>VBA</li>
+					<li>Python</li>
+					<li>C ++</li>
+				</ul>
+		</section>
+		<section>
+			<h2>Code examples</h2>
+			<p>Below is an example of Python code that saves links to drawings in a text file for subsequent import into an MS Access database.</p>
+			<pre><code>
 import os, re
 def saveSubdir(directory, file):
 	dir=directory
@@ -77,19 +85,27 @@ myfile = open(r'D:\Резка\БД\references.txt', 'wb')
 for	dir in drawingdirs:
 	saveSubdir(dir, myfile)
 myfile.close()
-</code></pre>
-	<h2>Experience</h2>
-	<p>My work experience is 4 years of work at AvtoVAZ as a chassis assembly technologist and 5 years of work as a technologist at the Tikhvin Freight Car Building Plant as a technologist for the production of steel roll-formed sections. Currently I hold the position of Lead Process Engineer. In my work, I often use programs written by me in VBA or Python for automated routine tasks. The largest personal project is a database in MS Access with the ability to automatically update data from Excel files, multiple filters and viewed data (manufacturing routes, bill of materials, nesting cards, links to drawings) in one window. Programming is currently a hobby for me, and I strive to move into this area completely, because this is what I really like.</p>
-	<h2>Education</h2>
-	<p>Samara university(Samara), Master’s degree, Internal combustion engines, 2009</p>
-	<h2>Languages</h2>
-	<ul>
-		<li>English: A1</li>
-		<li>Russian: native</li>
-	</ul>
+			</code></pre>
+		</section>
+		<section>
+			<h2>Experience</h2>
+			<p>My work experience is 4 years of work at AvtoVAZ as a chassis assembly technologist and 5 years of work as a technologist at the Tikhvin Freight Car Building Plant as a technologist for the production of steel roll-formed sections. Currently I hold the position of Lead Process Engineer. In my work, I often use programs written by me in VBA or Python for automated routine tasks. The largest personal project is a database in MS Access with the ability to automatically update data from Excel files, multiple filters and viewed data (manufacturing routes, bill of materials, nesting cards, links to drawings) in one window. Programming is currently a hobby for me, and I strive to move into this area completely, because this is what I really like.</p>
+		</section>
+		<section>
+			<h2>Education</h2>
+			<p>Samara university(Samara), Master’s degree, Internal combustion engines, 2009</p>
+		</section>
+		<section>
+			<h2>Languages</h2>
+			<ul>
+				<li>English: A1</li>
+				<li>Russian: native</li>
+			</ul>
+		</section>
+	</main>
 	<footer>
 			<div class="footer">
-				<a href="https://github.com/AweSable" style="color: black;">https://github.com/AweSable</a>
+				<a href="https://github.com/AweSable" style="color: black;">Github AweSable</a>
 				<time datetime="2021">2021</time>
 				<a href="https://rs.school/js/"><img class="logo" src="Images/rs_school_js.svg" alt="rsschool js logo"></a>
 			</div>
