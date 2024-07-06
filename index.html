@@ -9,94 +9,95 @@
 </head>
 <body>
 	<header>
-			<img src="Images/Photo.jpeg" alt="" height="189" width="126">
-			<div class="person">
-				<h1>Denis Poryvaev</h1>
-				<p class="sex_age_birthday">Man, 37 years old, date of birth 4 May 1987</p>
-				<address>
-					<ul class="cantacts">
-						<li>+7 (981) 1281075</li>
-						<li class="email">DA.Poryvaev@gmail.com</li>
-					</ul>
-					<p>Living: Togliatti</p>
-				</address>
+			<nav class="header_nav">
+				<ul class="nav_list">
+					<li class="nav_item">
+						<a href="#about">About Me</a>
+					</li>
+					<li class="nav_item">
+						<a href="#skills">Skills</a>
+					</li>
+					<li class="nav_item">
+						<a href="#code">Code</a>
+					</li>
+					<li class="nav_item">
+						<a href="#project">Project</a>
+					</li>
+					<li class="nav_item">
+						<a href="#experience">Experience</a>
+					</li>
+					<li class="nav_item">
+						<a href="#education">Education</a>
+					</li>
+					<li class="nav_item">
+						<a href="#languages">Languages</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="personal_inf_wrapper">
+				<img src="Images/Photo.jpeg" alt="" height="189" width="126">
+				<div class="person">
+					<h1>Denis Poryvaev</h1>
+					<p class="sex_age_birthday">Man, 37 years old, date of birth 4 May 1987</p>
+					<address>
+						<ul class="cantacts">
+							<li>+7 (981) 1281075</li>
+							<li class="email">DA.Poryvaev@gmail.com</li>
+						</ul>
+						<p>Living: Togliatti</p>
+					</address>
+				</div>
 			</div>
 	</header>
 	<main>
 		<section>
-			<h2>About Me</h2>
+			<h2 id="about">About Me</h2>
 			<p>The main goal is to overcome the barrier that prevents me from fully mastering programming, being able to transform an idea into a software product. My priority is self-improvement and mutual assistance when working in a team. My strong point is the desire to find a solution to any problem and diligence.</p>
 		</section>
 		<section>
-			<h2>Skills</h2>
+			<h2 id="skills">Skills</h2>
 			<p>At the moment I know the syntax and can do a little programming in:</p>
 				<ul>
+					<li>Java Script</li>
 					<li>VBA</li>
 					<li>Python</li>
 					<li>C ++</li>
 				</ul>
 		</section>
 		<section>
-			<h2>Code examples</h2>
-			<p>Below is an example of Python code that saves links to drawings in a text file for subsequent import into an MS Access database.</p>
-			<pre><code>
-import os, re
-def saveSubdir(directory, file):
-	dir=directory
-	myfile=file
-	regWasteDoc=re.compile(' ВП[ ,_]|ПСИ| РЭ[ ,_]| ГЧ[ ,_]| Д\d\d?[ ,_]| РР\d\d?[ ,_]'| ГЧ[ ,_]|'
-				' ПМ[ ,_]|[П,п]огашенн?ые|[А,а]нн?лированн?ые|[З,з]амен[е,ё]нн?ые')
-	regPartIndexVar1=re.compile('^ЦДЛР[ ,\.](\d\d\d\d\.\d\d\.\d\d\.\d\d\d*).+')
-	regPartIndexVar2=re.compile('^(\d\d\d\d\.\d\d\.\d\d\.\d\d\d).+')
-	regPartIndexVar3=re.compile('^(\d\d\d\d\-\d\d\.\d\d\.\d\d\.\d\d\d).+')
-	MatchVar1=False
-	MatchVar2=False
-	MatchVar3=False
-	for (thisDir, SubHere, filesHere) in os.walk(dir):
-		for filename in filesHere:
-			MatchWasteDoc=regWasteDoc.search(filename)
-			MatchVar1=regPartIndexVar1.search(filename)
-			MatchVar2=regPartIndexVar2.search(filename)
-			MatchVar3=regPartIndexVar3.search(filename)
-			Bol=MatchVar1 or MatchVar2 or MatchVar3
-			if MatchWasteDoc==None and Bol:
-				if regPartIndexVar1.search(filename):
-					matchPartIndex=regPartIndexVar1.match(filename)
-					sPartIndex=matchPartIndex.group(1)
-				elif regPartIndexVar2.search(filename):
-					matchPartIndex=regPartIndexVar2.match(filename)
-					sPartIndex=matchPartIndex.group(1)
-				elif regPartIndexVar3.search(filename):
-					matchPartIndex=regPartIndexVar3.match(filename)
-					sPartIndex=matchPartIndex.group(1)
-				ref='@#'+os.path.join(thisDir, filename)+'#'
-				record=ref+';'+filename[:-4]+';'+thisDir+';'+sPartIndex+'\n'
-				myfile.write(record.encode())
-			MatchVar1=False
-			MatchVar2=False
-			MatchVar3=False
-drawingdirs = []
-drawingdirs.insert(0,r'R:\Специальные документы\Архив КД продукта')
-drawingdirs.insert(1,r'R:\Специальные документы\ТСМ Архив КД продукта')
-drawingdirs.insert(2,r'R:\Специальные документы\ТХМ Архив КД продукта')
-drawingdirs.insert(3,r'R:\Специальные документы\Проекты извещений')
-
-myfile = open(r'D:\Резка\БД\references.txt', 'wb')
-for	dir in drawingdirs:
-	saveSubdir(dir, myfile)
-myfile.close()
-			</code></pre>
+			<h2 id="code">Code</h2>
+			<pre><code>function generateName()
+{
+  let name = '';
+  for (let i = 0; i < 6; i++){
+    const min = 65;
+    const max = 115;
+    let randomNum = Math.floor(Math.random() * (max - min + 1)) + min + '';
+    if (randomNum > 90) randomNum += 7;
+    ch = String.fromCharCode(randomNum);
+    name = name + ch;
+  }
+  return name;
+}</code></pre>
 		</section>
 		<section>
-			<h2>Experience</h2>
+			<h2 id="project">Project</h2>
+			<ul>
+				<li>
+					<a class="project_ref" href="https://AweSable.github.io/rsschool-cv/">CV</a>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="experience">Experience</h2>
 			<p>My work experience is 4 years of work at AvtoVAZ as a chassis assembly technologist and 5 years of work as a technologist at the Tikhvin Freight Car Building Plant as a technologist for the production of steel roll-formed sections. Currently I hold the position of Lead Process Engineer. In my work, I often use programs written by me in VBA or Python for automated routine tasks. The largest personal project is a database in MS Access with the ability to automatically update data from Excel files, multiple filters and viewed data (manufacturing routes, bill of materials, nesting cards, links to drawings) in one window. Programming is currently a hobby for me, and I strive to move into this area completely, because this is what I really like.</p>
 		</section>
 		<section>
-			<h2>Education</h2>
+			<h2 id="education">Education</h2>
 			<p>Samara university(Samara), Master’s degree, Internal combustion engines, 2009</p>
 		</section>
 		<section>
-			<h2>Languages</h2>
+			<h2 id="languages">Languages</h2>
 			<ul>
 				<li>English: A1</li>
 				<li>Russian: native</li>
@@ -107,7 +108,7 @@ myfile.close()
 			<div class="footer">
 				<a class="github_ref" href="https://github.com/AweSable">Github AweSable</a>
 				<time datetime="2024">2024</time>
-				<a href="https://rs.school/js/"><img class="logo" src="Images/rs_school_js.svg" alt="rsschool js logo"></a>
+				<a href="https://rs.school/courses/javascript-ru"><img class="logo" src="Images/rs_school_js.svg" alt="rsschool js logo"></a>
 			</div>
 	</footer>
 </body>

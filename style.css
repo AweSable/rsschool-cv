@@ -5,7 +5,31 @@ body {
   padding-left: 5px;
   padding-right: 5px;
 }
-header { display: flex; }
+/* header { display: flex; } */
+.nav_list {
+  display: flex;
+  padding: 0 3px;
+  background-color: darkseagreen;
+  margin-top: 0;
+  margin-bottom: 15px;
+  min-height: 3em;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.personal_inf_wrapper {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  font-weight: 100;
+  padding: 0 15px;
+}
+.nav_item {
+  list-style: none;
+}
 address { font-style: normal; }
 .logo {	height: 40px; }
 .person {
@@ -38,6 +62,9 @@ pre {
   background-color: rgb(202,240,202);
   border: 1px solid green;
   border-radius: .25rem;
+}
+.project_ref {
+  padding: 0;
 }
 footer {
   padding-top: 20px;
